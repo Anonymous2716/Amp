@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="OurColors" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+</resources>
