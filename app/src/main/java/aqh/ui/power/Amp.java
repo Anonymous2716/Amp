@@ -21,7 +21,7 @@ public class Amp extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, 512);
 
         setContentView(R.layout.lifecycle);
-   //     Intent batteryIntent = getApplicationContext().registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+        
         BatteryManager batteryManager = (BatteryManager) getApplicationContext().getSystemService(Context.BATTERY_SERVICE);
 
         final TextView message = (TextView) findViewById(R.id.message);
@@ -46,7 +46,6 @@ public class Amp extends Activity {
                                              , batteryHealth(batteryIntent)
                                              , status(batteryIntent)
                                              , plugged(batteryIntent)));
-                System.out.println(batteryManager.getLongProperty(BatteryManager.BATTERY_PROPERTY_CURRENT_NOW));
                 handler.postDelayed(this, 1000);
             }
         }, 1000);
