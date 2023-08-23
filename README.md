@@ -1,5 +1,5 @@
 # Amp
-Displays realtime microAmpere.
+Displays realtime battery information.
 
 Screenshots:
 
