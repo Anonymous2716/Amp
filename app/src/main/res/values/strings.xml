@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Amp</string>
+    <string name="current">Current: %1$d\nVoltage: %2$.1f\nWatt: %3$.2f\nPercentage: %4$d\nTemperature: %5$.1f\nHealth: %6$s\nStatus: %7$s\nPlugged: %8$s</string>
+</resources>
